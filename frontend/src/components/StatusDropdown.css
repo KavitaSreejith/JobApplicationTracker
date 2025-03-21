@@ -1,0 +1,72 @@
+.status-dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .status-dropdown {
+    appearance: none;
+    padding: 6px 30px 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 0.9rem;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23343a40' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 120px;
+    font-weight: 500;
+  }
+  
+  .status-dropdown:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .status-dropdown:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Status-specific styling */
+  .status-dropdown.status-applied {
+    border-color: #3498db;
+    color: #3498db;
+  }
+  
+  .status-dropdown.status-interview {
+    border-color: #9b59b6;
+    color: #9b59b6;
+  }
+  
+  .status-dropdown.status-offer {
+    border-color: #2ecc71;
+    color: #2ecc71;
+  }
+  
+  .status-dropdown.status-rejected {
+    border-color: #e74c3c;
+    color: #e74c3c;
+  }
+  
+  /* Loading spinner */
+  .dropdown-spinner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes spin {
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }

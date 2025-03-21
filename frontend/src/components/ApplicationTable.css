@@ -1,0 +1,157 @@
+.applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .applications-table thead th {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  .applications-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+  }
+  
+  .applications-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .applications-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .applications-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .status-applied {
+    background-color: #3498db;
+  }
+  
+  .status-interview {
+    background-color: #9b59b6;
+  }
+  
+  .status-offer {
+    background-color: #2ecc71;
+  }
+  
+  .status-rejected {
+    background-color: #e74c3c;
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .btn-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #ced4da;
+    transition: all 0.2s;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e9ecef;
+    color: #212529;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  
+  .empty-state h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #495057;
+  }
+  
+  .empty-state p {
+    color: #6c757d;
+    margin-bottom: 24px;
+  }
+  
+  .btn-add-new {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-add-new:hover {
+    background-color: #2980b9;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .applications-table {
+      min-width: 650px;
+    }
+  }

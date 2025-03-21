@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": "src",
+      "jsx": "react",
+      "paths": {
+        "components/*": ["components/*"],
+        "hooks/*": ["hooks/*"],
+        "services/*": ["services/*"],
+        "assets/*": ["assets/*"],
+        "utils/*": ["utils/*"]
+      },
+      "checkJs": true,
+      "moduleResolution": "node",
+      "target": "es2020",
+      "module": "es2020",
+      "resolveJsonModule": true
+    },
+    "include": ["src/**/*", "src/App.js", "src/index.js", "/config.js", "jsconfig.json"],
+    "exclude": ["node_modules", "build"]
+  }
